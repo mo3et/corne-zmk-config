@@ -26,6 +26,14 @@
         };
     };
 
+    behaviors {
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -54,7 +62,7 @@
             bindings = <
   &kp TAB        &kp N1          &kp N2        &kp N3        &kp N4        &kp N5        &kp N6        &kp N7        &kp N8     &kp N9  &kp N0  &kp BSPC
 &kp LCTRL  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &kp LEFT      &kp DOWN        &kp UP  &kp RIGHT  &trans    &trans
-&kp LSHFT         &to 5  &kp C_PREVIOUS   &kp C_PAUSE    &kp C_STOP    &kp C_NEXT    &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP     &trans  &trans    &trans
+&kp LSHFT        &trans  &kp C_PREVIOUS   &kp C_PAUSE    &kp C_STOP    &kp C_NEXT    &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP     &trans  &trans    &trans
                                              &kp LCMD        &trans     &kp SPACE       &kp RET         &mo 3      &kp RALT
             >;
         };
@@ -78,7 +86,7 @@
             bindings = <
 &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp F11  &kp F12  &trans  &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans   &trans  &trans
+&trans   &mo 5  &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans   &trans  &trans
                         &trans  &trans  &trans     &trans   &trans  &trans
             >;
         };
