@@ -22,7 +22,7 @@
             bindings = <&bt BT_CLR>;
             key-positions = <13 17 37>;
             layers = <2>;
-            timeout-ms = <600>;
+            timeout-ms = <500>;
         };
     };
 
