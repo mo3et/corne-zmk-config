@@ -19,14 +19,11 @@
         };
 
         bt_reset {
-            bindings = <&bt BT_NXT>;
+            bindings = <&bt BT_CLR>;
             key-positions = <13 17 37>;
             layers = <3>;
             timeout-ms = <500>;
         };
-    };
-
-    behaviors {
     };
 
     keymap {
